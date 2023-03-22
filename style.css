@@ -1,0 +1,245 @@
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    max-width: 1000px;
+    margin-top: 52px;
+    margin: 52px 238px 93px 238px;
+    height: 100vh;
+    
+}
+
+.header{
+    max-width: 600px;
+}
+
+.title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 12px;
+}
+
+.dots {
+    margin-right: 12px;
+}
+
+.content {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row; 
+    
+}
+
+.image img{
+    width: 100%;
+    margin: 40px 0;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+.recipe-meal {
+    row-gap: 14px;
+}
+
+.recipe-title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 32px;
+
+    color: #333333;
+}
+
+.recipe-subtitle {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 30px;
+
+    color: #333333;
+}
+
+.recipe-line{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    align-items: start;
+    padding-bottom: 14px;
+}
+
+.recipe-content {
+    max-width: 550px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+
+    color: #333333;
+}
+
+
+.recipe span{
+    color: #828282;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    row-gap: 30px;
+    
+    height: fit-content;
+    width: fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+}
+
+.box-line {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+}
+
+.box-statistics{
+    gap: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+i {
+    weight: 500;
+}
+
+.orange {
+    color: #F2994A;
+    weight: bold;
+
+}
+
+.orange-box {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: block;
+    background: #F2994A;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+.colored {
+    color: #F2994A;
+}
+
+
+.numbers {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    
+
+    color: #333333;
+}
+
+.numbers-1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #F2994A;
+}
+
+.source {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding-top: 57px;
+ 
+    color: #BDBDBD;
+}
+
+a {
+    color: #BDBDBD;
+}
+
+a:hover{
+    color: #F2994A;
+}
+
+
+footer {
+    text-align: center;
+    padding-top: 93px;
+    padding-bottom: 24px;
+    justify-content: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #828282;
+}
+
+@media (max-width: 860px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        margin: 32px 11px;
+    }
+
+    .recipe{
+        flex-direction: column-reverse;
+    }
+}

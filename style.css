@@ -7,11 +7,14 @@ body {
     display: flex;
     flex-direction: column;
     background: white;
+       
+}
+
+.wrapper{
+    padding-top: 40px;
     max-width: 1000px;
-    margin-top: 52px;
-    margin: 52px 238px 93px 238px;
+    margin: 0 auto;
     height: 100vh;
-    
 }
 
 .header{
@@ -84,6 +87,12 @@ body {
     color: #333333;
 }
 
+.checkbox{
+    height: 16px;
+    width: 16px;
+    margin-top: 4px;
+}
+
 .recipe-line{
     display: flex;
     flex-direction: row;
@@ -91,6 +100,36 @@ body {
     align-items: start;
     padding-bottom: 14px;
 }
+
+ol {
+    list-style: none;
+    counter-reset: item;
+}
+
+li{
+    counter-increment: item;
+    margin-bottom: 17px;
+    display:flex;
+    flex-direction: row;
+}
+li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: #F2994A;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: block;
+    background: #F2994A;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+  }
 
 .recipe-content {
     max-width: 550px;
@@ -144,21 +183,6 @@ i {
     color: #F2994A;
     weight: bold;
 
-}
-
-.orange-box {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    display: block;
-    background: #F2994A;
-    border-radius: 6px;
-    width: 36px;
-    height: 36px;
-    text-align: center;
-    color: #FFFFFF;
 }
 
 .name {
@@ -238,8 +262,52 @@ footer {
         flex-direction: column;
         margin: 32px 11px;
     }
+    .wrapper{
+        padding-top: 0px;
+    }
+    .title{
+        font-size: 24px;
+    }
 
     .recipe{
         flex-direction: column-reverse;
+        
     }
+    .recipe-meal{
+        margin: 0 auto;
+    }
+
+    .checkbox {
+        height: 16px;
+        width: 16px;
+    }
+    .box{
+        margin: 0 auto;
+    }
+
+    .recipe-content {
+        font-size: 14px;
+        
+    }
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .recipe-title{
+        padding-top: 10px;
+    }
+    .source{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-content{
+        max-width: 300px;
+    }
+
 }
